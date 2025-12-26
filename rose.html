@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Special Surprise</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22></text></svg>">
+</head>
+<body class="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-pink-900 font-inter ">
+    <div id="heartContainer" class="fixed inset-0 pointer-events-none z-10"></div>
+    <main class="min-h-screen relative z-20">
+        <div class="container mx-auto px-4 py-8 md:py-12 lg:py-16">
+            <div class="text-center mb-12 md:mb-16 lg:mb-20 fade-in">
+                <div class="text-8xl md:text-9xl lg:text-10xl mb-8 text-rose-500">
+                    🌹
+                </div>
+                
+                <div class="inline-block bg-white/95 backdrop-blur-sm rounded-2xl shadow-lg px-6 py-4 mb-8">
+                    <p class="text-xl md:text-2xl font-bold text-rose-600">
+                        For My Beautiful Girlfriend Angela
+                    </p>
+                </div>
+            </div>
+            <div class="max-w-3xl mx-auto mb-12 md:mb-16 lg:mb-20 fade-in" style="animation-delay: 0.1s">
+                <div class="text-center mb-8 md:mb-10">
+                    <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+                        My Heart is Yours...
+                    </h1>
+                </div>
+                
+                <div class="bg-white/95 backdrop-blur-sm rounded-2xl shadow-xl p-8 md:p-10 lg:p-12 border border-white/20">
+                    <p class="text-xl md:text-2xl lg:text-3xl text-gray-800 mb-8 font-dancing text-center leading-relaxed" style="font-family:  cursive;">
+                        Every beat of my heart<br>
+                        Sings your name, my dearest LALAB.
+                    </p>
+                    
+                    <div class="my-8 md:my-10 text-center">
+                        <span class="text-5xl md:text-6xl text-rose-500"><img src="Pictures/catiloveoyu.jpg" alt="photo" class="max-h-[10rem] mx-auto"></span>
+                    </div>
+                    
+                    <p class="text-lg md:text-xl text-rose-600 italic text-center font-medium">
+                      Mwaa!
+                    </p>
+                </div>
+            </div>
+            <div class="max-w-2xl mx-auto mb-12 md:mb-16 lg:mb-20 fade-in" style="animation-delay: 0.2s">
+                <div class="bg-gradient-to-r from-rose-50/90 to-pink-50/90 rounded-2xl shadow-lg p-8 md:p-10 border border-rose-200">
+                    <h2 class="text-2xl md:text-3xl font-bold text-rose-700 mb-6 text-center">
+                        Thank You For Everything
+                    </h2>
+                    <p class="text-gray-700 mb-8 text-center text-lg md:text-xl leading-relaxed">
+                        For being my beautiful partner, my happiness and my everything.<br>
+                        For every smile, every laugh and every moment we share.<br>
+                        I love you more than words can express, my dearest LALAB.
+                    </p>
+                    <div class="flex justify-center gap-4 md:gap-6 text-3xl md:text-4xl">
+                        <span class="shadow shadow-pink-400 shadow-xl rounded-full">💕</span>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center fade-in" style="animation-delay: 0.3s">
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                    <button onclick="window.location.href='gallery.html'" 
+                            class="bg-white text-rose-600 font-bold py-3 px-6 rounded-full shadow-lg hover:bg-rose-50 hover:shadow-xl transition-all duration-300 border-2 border-rose-600 text-lg">
+                        ← Back to Memories
+                    </button>
+                    <button id="loveButton" onclick="createHeartStorm()" 
+                            class="bg-gradient-to-r from-rose-500 to-pink-500 text-white font-bold py-3 px-6 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 text-lg active:scale-95">
+                        Show More Love! 💘
+                    </button>
+                </div>
+                
+                <p class="text-pink-200 mb-4 text-lg md:text-xl">My love for you grows every day...</p>
+                <div class="flex justify-center gap-2">
+                    <div class="w-2 h-2 bg-rose-400 rounded-full"></div>
+                    <div class="w-2 h-2 bg-pink-400 rounded-full"></div>
+                    <div class="w-2 h-2 bg-rose-400 rounded-full"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+ <script src="script.js"></script>
+</body>
+</html>

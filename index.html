@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Monthsary</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💕</text></svg>">
+</head>
+<body class="min-h-screen bg-gradient-to-b from-rose-50 to-pink-50 font-inter">
+    <div class="floating-hearts" id="heartsContainer"></div>
+    <main class="min-h-screen flex flex-col items-center justify-center px-4 py-8 relative z-10">
+        <div class="w-full max-w-md mx-auto">
+            <div class="text-center mb-12 animate-fadeIn">
+                <div class="mb-8">
+                    <span class="text-6xl mb-6 inline-block animate-heartbeat text-rose-500">💖</span>
+                    <h1 class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-rose-500 to-pink-500 bg-clip-text text-transparent mb-3">
+                        Our Monthsary Journey
+                    </h1>
+                    <p class="text-gray-600 text-lg">
+                        Enter the date
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl shadow-pink-400 p-8 md:p-10 mb-8 animate-slideUp border border-rose-100 hover:shadow-pink-300 hover:shadow-xl transition-shadow duration-300">
+                <div class="text-center mb-10">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-2">When did our love story begin?</h2>
+                </div>
+                
+                <div class="relative mb-8">
+                    <input type="date" 
+                           id="dateInput" 
+                           class="w-full p-4 text-lg border-2 border-gray-200 rounded-xl focus:border-rose-400 focus:ring-2 focus:ring-rose-100 focus:outline-none transition-all duration-200 text-center cursor-pointer"
+                           onchange="checkDate()"
+                           aria-label="Select our monthsary date">
+                    <div class="absolute right-4 top-1/2 transform -translate-y-1/2 text-rose-400 pointer-events-none">
+                        📅
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <div class="inline-flex items-center gap-3 bg-rose-50 px-4 py-2 rounded-full">
+                        <span class="text-rose-600 font-medium text-sm">Get ready!</span>
+                        
+                    </div>
+                </div>
+            </div>
+            <div id="errorMessage" class="hidden w-full max-w-md mx-auto mb-8 animate-fadeIn">
+                <div class="bg-white rounded-2xl shadow-lg p-6 border-2 border-rose-200 bg-gradient-to-r from-rose-50 to-pink-50">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0">
+                            <div class="w-12 h-12 bg-rose-100 rounded-full flex items-center justify-center animate-heartbeat">
+                                <span class="text-rose-500 text-xl"><img src="Pictures/cat.jpg" alt="photo" class="rounded"></span>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-rose-700 font-bold mb-1">Hmmm!?</h3>
+                            <p class="text-rose-600">You don't know our Monthsary?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="successPopup" class="hidden fixed inset-0 flex items-center justify-center z-50 p-4">
+        <div class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
+        <div class="relative bg-white rounded-3xl shadow-2xl p-8 md:p-10 max-w-md w-full animate-slideUp border-2 border-rose-100">
+            <div class="text-center">
+                <span class="text-6xl mb-6 block animate-heartbeat text-rose-500">💖</span>
+                
+                <h1 class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-rose-500 to-pink-500 bg-clip-text text-transparent mb-3">
+                    Happy Monthsary LALAB!
+                </h1>
+                <p class="text-rose-500 text-xl font-medium mb-8 animate-pulse">
+                    I LOVE YOU mwaa! 
+                </p>
+                <div class="mb-8">
+                    <div class="w-full bg-gray-200 rounded-full h-2 overflow-hidden">
+                        <div id="progressBar" class="h-2 bg-gradient-to-r from-rose-500 to-pink-500 rounded-full animate-progress"></div>
+                    </div>
+                    <p class="text-gray-600 mt-4 text-sm">
+                        Taking you to your surprise in 
+                        <span id="countdown" class="font-bold text-rose-600">4</span> 
+                        seconds...
+                    </p>
+                </div>
+                <div class="flex justify-center gap-2">
+                    <div class="w-2 h-2 bg-rose-400 rounded-full animate-pulse"></div>
+                    <div class="w-2 h-2 bg-pink-400 rounded-full animate-pulse" style="animation-delay: 0.2s"></div>
+                    <div class="w-2 h-2 bg-rose-400 rounded-full animate-pulse" style="animation-delay: 0.4s"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
